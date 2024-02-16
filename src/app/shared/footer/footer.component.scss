@@ -1,0 +1,225 @@
+
+
+.formBorder input[type=text] {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 0px !important;
+    background-color: #FDF9F7
+}
+
+.formBorder input[type=email] {
+    padding: 15px;
+    border: 1PX solid black;
+    border-radius: 0px !important;
+    background-color: #FDF9F7
+}
+
+.formBorder input[type=number] {
+    padding: 15px;
+    border: 1PX solid black;
+    border-radius: 0px !important;
+    background-color: #FDF9F7
+}
+
+
+
+.accordianContentAll {
+    position: relative;
+}
+
+textarea {
+    border: 1px solid black !important;
+}
+
+.largecheckbox {
+
+    height: 32px !important;
+    width: 32px !important;
+}
+
+.bottomBox {
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.bottomBoxBorder {
+    display: flex;
+    align-items:center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.checkboxContent {
+    width: 80%;
+}
+
+.sendBtn {
+    border: 1px solid grey;
+    width: 20%;
+    margin-top: 15px;
+    padding: 15px;
+    color: grey;
+}
+
+.sendBtnBottomFooter {
+    border: 1px solid grey;
+    width: 30%;
+    margin-top: 15px;
+    padding: 15px;
+    color: grey;
+}
+
+.bottomBoxSendBtn {
+    display: flex;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: none !important;
+}
+
+.footerAccordianHeading {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.dummmy {
+    margin-top: 100px;
+}
+
+.column-inner {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+}
+
+.column-inner a {
+    padding-right: 20px !important;
+}
+
+.Footer {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #a79f9b;
+    padding: 35px 0 24px;
+
+}
+
+.footerFirstDiv {
+    padding: 20px 40px;
+}
+
+.borderRight {
+    border-right: 1px solid white;
+}
+
+.column-inner {
+    margin-top: 20px;
+}
+
+.inner-column {
+    margin-top: 20px;
+}
+
+.inner-column input[type=email] {
+    padding: 13px;
+    border: none !important;
+    background-color: white;
+    border-radius: 0px !important;
+}
+.accordianBodyContainer{
+  padding:25px 40px !important;
+}
+#footerSection .accordion-button{
+  padding:8px 40px !important;
+}
+
+.infoMail{
+  margin-top:190px;
+}
+.customizedBtnLeft p{
+  color:#AAEEC4;
+}
+.customizedBtnLeft span{
+  color:#a7a7a7;
+}
+.customizedButton{
+  display:inline-flex;
+  gap:10px;
+  background: rgba(36, 34, 34, 0.8);
+  border-radius:8px;
+  padding:8px;
+
+}
+.customizedBtnLeft{
+  padding:20px;
+  border-radius:8px;
+}
+.customizedBtnRight{
+  padding:20px;
+  border-radius:8px;
+  background-color:#AAEEC4 ;
+}
+.customizedBtnHolder{
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.xityTypeFooter{
+  padding: 15px 40px ;
+  border:1px solid white;
+  border-top:none !important;
+}
+.endBarContainer{
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.leftContentBody{
+  width:100%;
+  height: 80vh;
+  background: var(--dark-black);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.textGreenFooter{
+  color:#26736B;
+}
+.centerAlignedBox{
+  padding:35px;
+}
+.selectBtnInputForm{
+  background: var(--dark-black);
+  padding:8px 25px;
+  border:1px solid white;
+  border-radius:20px;
+}
+.inputForm{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+.ngSelectMenu{
+  width:60%;
+  border: none;
+  border-radius: 20px;
+}
+.rightImgContainer{
+  width:100%;
+  height:80vh;
+}
+
+@media (max-width: 600px) {
+  .accordianBodyContainer{
+    padding:15px !important;
+  }
+}
+.parentFormBorder:nth-child(2){
+  border-top: none !important;
+  border-bottom: none !important;
+}
+.parentFormBorder:nth-child(3){
+border-left:none !important;
+}

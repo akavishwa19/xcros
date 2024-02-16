@@ -1,0 +1,156 @@
+<section class="fullPageSection">
+  <div class="row forceZeroMarginPadding">
+    <div class="col-12 col-lg-4 col-md-4 col-sm-12 forceZeroPadding">
+      <div class="infoContainer bg-primary-blue">
+        <div class="centeredContainer">
+          <p class="jost-font text-white font-size-28 font-weight-600 line-height-37">Launching Soon</p>
+          <div class="contactInfoContainer pb-2">
+          <div class="icon-flex mt-2">
+            <i class="fa-solid fa-phone text-white font-size-13 font-weight-600"></i>
+            <p class="jost-font text-white font-size-13 font-weight-500">1234567890</p>
+          </div>
+          <div class="icon-flex mt-2">
+            <i class="fa-regular fa-envelope text-white font-size-13 font-weight-600"></i>
+            <p class="jost-font text-white font-size-13 font-weight-500">contactus&#64;gudvil.in</p>
+          </div>
+          </div>
+          <hr class="customHrTag text-white">
+          <p class="jost-font text-white font-size-18 font-weight-500 line-height-26 pt-2">Our Website is Coming Soon </p>
+          <button class="bg-primary-blue text-white jost-font font-size-13 font-weight-500 inviteBtn my-2" (click)="openModal(template)">
+            Get an Invite
+          </button>
+          <p class="text-white font-size-13 font-weight-400 jost-font line-height-26">Sign up now to our newsletter and you will be one of the first know <br>
+            when our new website as ready
+          </p>
+          <div id="specialStyles" class="input-group mb-3 customInputGroup my-4">
+            <input style="border-right:white" type="text" class="form-control inputGroupPlaceholder" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text bg-primary-blue" id="basic-addon2">Subscribe</span>
+          </div>
+          <div class="iconFlex mt-5">
+            <div class="iconContainer bg-primary-white mt-4">
+              <i class="fa-brands fa-instagram font-weight-600 font-size-18"></i>
+            </div>
+            <div class="iconContainer bg-primary-white mt-4">
+              <i class="fa-brands fa-twitter font-weight-600 font-size-18"></i>
+            </div>
+            <div class="iconContainer bg-primary-white mt-4">
+              <i class="fa-brands fa-facebook font-weight-600 font-size-18"></i>
+            </div>
+            <div class="iconContainer bg-primary-white mt-4">
+              <i class="fa-brands fa-linkedin font-weight-600 font-size-18"></i>
+            </div>
+          </div>
+
+          <div class="bottomImgContainer">
+            <img style="width:100%;height: auto" src="assets/launchingsoonbottom.png">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-8 col-md-8 col-sm-12 forceZeroPadding position-relative">
+      <swiper [config]="banner">
+        <ng-template swiperSlide="">
+          <div class="rightSection">
+            <div class="bottomContent">
+              <div class="clock">
+                <div class="digitBox">
+                  <p class="jost-font font-weight-500 font-size-35 text-white text-align-center line-height-37">00</p>
+                  <p class="jost-font font-weight-500 font-size-10 text-white text-align-center">DAYS</p>
+                </div>
+                <div class="digitBox">
+                  <p class="jost-font font-weight-500 font-size-35 text-white text-align-center line-height-37">00</p>
+                  <p class="jost-font font-weight-500 font-size-10 text-white text-align-center">HOURS</p>
+                </div>
+                <div class="digitBox">
+                  <p class="jost-font font-weight-500 font-size-35 text-white text-align-center line-height-37">00</p>
+                  <p class="jost-font font-weight-500 font-size-10 text-white text-align-center">MINUTES</p>
+                </div>
+                <div class="digitBox">
+                  <p class="jost-font font-weight-500 font-size-35 text-white text-align-center line-height-37">00</p>
+                  <p class="jost-font font-weight-500 font-size-10 text-white text-align-center">SECONDS</p>
+                </div>
+              </div>
+              <div class="additionalInfoContainer">
+                <div class="contactInfoContainer pb-2">
+                  <div class="icon-flex mt-2">
+                    <i class="fa-solid fa-phone text-white font-size-13 font-weight-600 text-blue"></i>
+                    <p class="jost-font text-white font-size-13 font-weight-500">1234567890</p>
+                  </div>
+                  <div class="icon-flex mt-2">
+                    <i class="fa-regular fa-envelope text-white font-size-13 font-weight-600 text-blue"></i>
+                    <p class="jost-font text-white font-size-13 font-weight-500">contactus&#64;gudvil.in</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+      <div class="navigatorBtnLeft next-el ">
+        <div class="roundedBtn bg-black">
+          <i class="fa-solid fa-arrow-left text-white"></i>
+        </div>
+      </div>
+      <div class="navigatorBtnRight prev-el ">
+        <div class="roundedBtn bg-black">
+          <i class="fa-solid fa-arrow-right text-white"></i>
+        </div>
+      </div>
+      <div class="relativeBlock">
+        <div class="myDiv">
+        </div>
+        <div class="straightLine">
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<ng-template #template>
+  <div class="modal-header modelHeaderBg">
+    <p class="modal-title pull-left jost-font font-size-16 font-weight-600 text-black">Get an Invite</p>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+
+    <div id="modalBodyForm" class="modal-body mb-2">
+      <div>
+        <div class="input-group mb-4">
+      <span class="input-group-text" >
+        <i class="fa-solid fa-user"></i>
+      </span>
+          <input type="text" class="form-control contactForm" placeholder="*Your Name" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-4">
+      <span class="input-group-text" >
+        <i class="fa-solid fa-envelope"></i>
+      </span>
+          <input type="text" class="form-control contactForm" placeholder="*Your Email"  aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-4">
+      <span class="input-group-text" >
+        <i class="fa-solid fa-phone"></i>
+      </span>
+          <input type="number" class="form-control contactForm" placeholder="*Your Phone Number" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-4">
+
+          <textarea rows="4" class="form-control contactForm" placeholder="*Your Message" aria-label="Username" aria-describedby="basic-addon1"></textarea>
+        </div>
+
+        <button class="bg-primary-blue text-white jost-font font-size-13 font-weight-500 inviteBtn my-2" (click)="showSuccess()" >
+          <i class="fa-solid fa-check mx-2" style="margin-left:0 !important;"></i> Send Message
+        </button>
+        <p-toast></p-toast>
+
+      </div>
+
+  </div>
+
+</ng-template>

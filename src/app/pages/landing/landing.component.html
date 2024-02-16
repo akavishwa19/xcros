@@ -1,0 +1,151 @@
+<app-header></app-header>
+
+<section class="position-relative firstSection" id="progressbar-swiper">
+  <swiper [config]="mainBannerSwiper">
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+    <div class="fullPageContent">
+      <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+    </div>
+    <div class="textOverImage">
+      <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+    </div>
+  </div>
+    </ng-template>
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+        <div class="fullPageContent">
+          <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+        </div>
+        <div class="textOverImage">
+          <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+        <div class="fullPageContent">
+          <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+        </div>
+        <div class="textOverImage">
+          <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+        <div class="fullPageContent">
+          <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+        </div>
+        <div class="textOverImage">
+          <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+        <div class="fullPageContent">
+          <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+        </div>
+        <div class="textOverImage">
+          <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+        </div>
+      </div>
+    </ng-template>
+
+  </swiper>
+  <div class="navigatorBtnLeft next-element ">
+    <div class="roundedBtn bg-black">
+      <i class="fa-solid fa-arrow-left text-white"></i>
+    </div>
+  </div>
+  <div class="navigatorBtnRight prev-element ">
+    <div class="roundedBtn bg-black">
+      <i class="fa-solid fa-arrow-right text-white"></i>
+    </div>
+  </div>
+</section>
+
+<section>
+  <swiper [config]="mainBannerSwiperLower">
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+        <div class="fullPageContent">
+          <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+        </div>
+        <div class="textOverImage">
+          <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+        <div class="fullPageContent">
+          <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+        </div>
+        <div class="textOverImage">
+          <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+        <div class="fullPageContent">
+          <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+        </div>
+        <div class="textOverImage">
+          <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+        <div class="fullPageContent">
+          <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+        </div>
+        <div class="textOverImage">
+          <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide="">
+      <div class="fullPageSlider">
+        <div class="fullPageContent">
+          <img style="width:100%;height: 100%; filter: contrast(119%) brightness(70%);" src="assets/imageForSlider.jpg">
+        </div>
+        <div class="textOverImage">
+          <p class="text-white font-weight-600 font-size-65 line-height-80 jost-font">Customisation <br> and attention to detail</p>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</section>
+
+<div *ngIf="showDiv" (click)="showStrip()" class="floatNavigator">
+  <div class="arrowHolder bg-black">
+    <i class="fa-solid fa-arrow-up text-align-center text-white font-size-18 font-weight-500"></i>
+  </div>
+</div>
+<div *ngIf="showStripValue" class="floatNavigatorOptions">
+  <div class="strip bg-white">
+    <div class="iconHolderFloatNavigatorOptions text-align-center pt-4 pb-3">
+      <i class="fa-brands fa-instagram text-align-center text-black font-size-18 font-weight-500"></i>
+    </div>
+    <div class="iconHolderFloatNavigatorOptions text-align-center py-3">
+      <i class="fa-brands fa-linkedin text-align-center text-black font-size-18 font-weight-500"></i>
+    </div>
+    <div class="iconHolderFloatNavigatorOptions text-align-center py-3">
+      <i class="fa-brands fa-twitter text-align-center text-black font-size-18 font-weight-500"></i>
+    </div>
+    <div class="iconHolderFloatNavigatorOptions text-align-center py-3">
+      <i class="fa-brands fa-facebook text-align-center text-black font-size-18 font-weight-500"></i>
+    </div>
+    <div (click)="scrollToTop()" class="iconHolderFloatNavigatorOptions text-align-center py-3">
+      <i class="fa-solid fa-arrow-up text-align-center text-black font-size-18 font-weight-500"></i>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+

@@ -1,0 +1,18 @@
+.boxForHoldingContent{
+  box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.1);
+  border-radius:20px;
+}
+.pageInfo{
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+.p-breadcrumb{
+  border:none !important
+}
+.boxHead{
+  border-bottom: 1px solid #d8ecff;
+}
+.boxForHoldingContent{
+  padding:20px;
+}

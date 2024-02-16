@@ -1,0 +1,101 @@
+<app-header></app-header>
+<section id="searchContainer" class="default-section-padding firstSection">
+  <div class="container mt-5 pt-2">
+    <form [formGroup]="searchForm">
+      <div class="input-group mb-3">
+        <input
+          (input)="convertToFalse()"
+          formControlName="searchTerm"
+          type="text"
+          class="form-control inputBg"
+          placeholder="Search here"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+        />
+        <span
+          (click)="submitSearchForm()"
+          class="input-group-text"
+          id="basic-addon2"
+          ><i
+            class="fa-solid fa-magnifying-glass text-black magnifyingGlass"
+          ></i
+        ></span>
+      </div>
+    </form>
+  </div>
+</section>
+<section
+  *ngIf="searchForm.controls['searchTerm'].value == '' || !showSearchResult"
+  class="default-section-padding bg-variable-light-grey"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+        <div id="sideMenu" class="navigationMenuContainer">
+          <p-panelMenu
+            [model]="items"
+            [style]="{ width: '300px' }"
+            [multiple]="true"
+            id="legal-menu"
+            [appendTo]="'body'"
+          ></p-panelMenu>
+          <div (click)="scrollToTop()" class="pt-3">
+            <p-button label="Back to Top" icon="pi pi-angle-up"></p-button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-9 col-md-9 col-sm-12">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</section>
+<section
+  *ngIf="showSearchResult "
+  class="default-section-padding bg-variable-light-grey"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+        <p class="jost-font font-size-24 font-weight-500 my-3">
+          Showing results for "{{ searchForm.controls["searchTerm"].value }}"
+        </p>
+        <div class="bodyBlock" *ngIf="searchResult.length > 0">
+          <div
+            class="boxForHoldingContent bg-white mt-4"
+            *ngFor="let legalBlock of searchResult; let i = index"
+            id="{{ i }}"
+          >
+            <div class="boxHead bg-white pb-3">
+              <p
+                class="text-transform-uppercase jost-font font-size-24 line-height-26 font-weight-500"
+              >
+                {{ legalBlock.title }}
+              </p>
+            </div>
+            <div class="boxBod bg-whitey pt-3">
+              <p
+                class="text-black jost-font font-size-16 font-weight-400 line-height-23"
+              >
+                {{ legalBlock.content }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bodyBlock" *ngIf="searchResult.length == 0">
+          <div class="boxForHoldingContent bg-white mt-4">
+            <div class="bg-white">
+              <p
+                class="text-transform-uppercase jost-font font-size-24 line-height-26 font-weight-500"
+              >
+                NO RESULTS FOUND
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

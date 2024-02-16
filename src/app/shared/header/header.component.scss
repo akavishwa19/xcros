@@ -1,0 +1,46 @@
+.mainHeader{
+  padding:5px 40px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:80px;
+  transition: top 0.3s;
+
+  // position: absolute;
+  // z-index: 99999;
+  // width: 100%;
+
+}
+.logoContainer{
+  overflow:hidden;
+  height:70px;
+}
+.userContainer{
+  height:40px;
+  width:40px;
+  box-shadow: 0 0 0 6px #ffffff1a;
+}
+
+header {
+  transition: opacity 1.2s ease ;
+}
+.positionTopRight{
+  position:absolute;
+  top:15px;
+  right: 18px;
+}
+.offcanvas-body{
+  background-color:black;
+
+}
+.spacingUl{
+  padding:15px;
+}
+
+.fade-in-out {
+  transition: opacity 0.5s ease;
+}
+
+.fade-in-out.hidden {
+  opacity: 0;
+}

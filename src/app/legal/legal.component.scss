@@ -1,0 +1,64 @@
+.magnifyingGlass{
+    color: #757fef !important;
+}
+
+.inputBg{
+    background-color: #f5f7fa !important;
+    border-right: none !important;
+}
+#searchContainer .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #757fef !important;
+    outline: 0;
+    width: 250px;
+}
+.inputBg::placeholder{
+    color: #A9AACA;
+    font-size: 15px;
+    font-family: 'Jost', sans-serif;
+}
+.navigationMenuContainer{
+  text-decoration:none !important;
+  color:black !important;
+}
+.p-panelmenu-header-action{
+  text-decoration:none !important;
+  color:black !important;
+}
+#sideMenu ul{
+  padding-left:10px !important;
+}
+.p-menuitem-link {
+  text-decoration:none !important;
+  color:black !important;
+}
+.p-meniitem-icon{
+  text-decoration:none !important;
+  color:black !important;
+}
+ .p-submenu-list .p-panelmenu-root-list{
+  padding-left:0 !important;
+}
+.boxForHoldingContent{
+  box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.1);
+  border-radius:20px;
+}
+.pageInfo{
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+.p-breadcrumb{
+  border:none !important
+}
+.boxHead{
+  border-bottom: 1px solid #d8ecff;
+}
+.boxForHoldingContent{
+  padding:20px;
+}

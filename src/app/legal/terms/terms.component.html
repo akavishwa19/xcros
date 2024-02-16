@@ -1,0 +1,27 @@
+<div class="mainContaineer mt-2">
+  <div class="pageInfo">
+    <div>
+      <p class="text-black jost-font font-size-35 font-weight-600 line-height-37">Terms</p>
+      <p class="text-black jost-font font-size-20 font-weight-500 line-height-26 mt-2">Website T's & C's</p>
+    </div>
+    <div>
+      <p-breadcrumb  [model]="items" [home]="home"></p-breadcrumb>
+    </div>
+  </div>
+  <div class="boxForHoldingContent bg-white mt-3">
+    <div class="boxHead pb-3">
+      <p class="text-black jost-font font-size-16 font-weight-400 line-height-23">Table Of Contents</p>
+    </div>
+    <div class="boxBody pt-3">
+      <p class="text-black jost-font font-size-16 font-weight-400 line-height-23 text-transform-uppercase text-decoration-underline mt-2" *ngFor="let legalBlock of legalBlocks;let i =index"><a class="text-black" href="/legal/terms#{{i}}">  {{legalBlock.title}}</a></p>
+    </div>
+  </div>
+  <div class="boxForHoldingContent bg-white mt-4" *ngFor="let legalBlock of legalBlocks;let i =index" id="{{i}}">
+    <div class="boxHead bg-white pb-3">
+      <p class="text-transform-uppercase jost-font font-size-24 line-height-26 font-weight-500">{{legalBlock.title}}</p>
+    </div>
+    <div class="boxBody bg-white pt-3">
+      <p class="text-black jost-font font-size-16 font-weight-400 line-height-23">{{legalBlock.content}}</p>
+    </div>
+  </div>
+</div>

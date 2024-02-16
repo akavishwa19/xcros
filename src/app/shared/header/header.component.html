@@ -1,0 +1,174 @@
+<!-- [@fade]="headerState" -->
+<!-- [style.display]="headerVisible ? 'visible' : 'none'" -->
+<header [ngClass]="{'fade-in-out': true, 'hidden': isHidden}" class="fixed-top ">
+  <section class="">
+    <div>
+      <alert [dismissible]="dismissible" (onClosed)="allocateSpace()" >
+        <div>
+          <p
+            class="text-white jost-font font-size-16 font-weight-500 text-align-center"
+          >
+            Get the ultimate landing page solution for large teams and agencies.
+            <u>Learn more</u>
+          </p>
+        </div>
+      </alert>
+    </div>
+    <div class="mainHeader bg-variable-white">
+      <div class="hamburger">
+        <p class="font-size-18 jost-font text-black" (click)="open(content)">
+          <i style="margin-right: 5px" class="fa-solid fa-bars text-black"></i
+          >Menu
+        </p>
+      </div>
+      <div class="logoContainer">
+        <img style="width: 100%; height: 100%" src="assets/xarkHeader.jpg" />
+      </div>
+      <div class="userContainer">
+        <img
+          style="width: 100%; height: 100%"
+          src="assets/placeholderUser.png"
+        />
+      </div>
+    </div>
+  </section>
+</header>
+
+<ng-template #content let-offcanvas>
+  <div class="offcanvas-body" id="offcanvas-body">
+    <button
+      type="button"
+      class="btn-close positionTopRight text-white"
+      aria-label="Close"
+      (click)="offcanvas.dismiss('Cross click')"
+    ></button>
+    <div class="spacingUl">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item my-2 pb-1">
+          <a
+            class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+            (click)="offcanvas.dismiss('Cross click')"
+          >Home</a
+          >
+        </li>
+        <li class="nav-item my-2 pb-1">
+          <a
+            (click)="open3(innercontentAboutUs)"
+            class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+          >About Us <i class="fa-solid fa-angle-right font-size-13 mx-0"></i></a
+          >
+        </li>
+
+
+        <li class="nav-item my-2 pb-1">
+          <a
+          class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+          >Festivals</a
+          >
+        </li>
+
+        <li class="nav-item my-2 pb-1">
+          <a
+            (click)="open2(innercontentActivities)"
+            class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+          >Activities<i class="fa-solid fa-angle-right font-size-13 mx-1"></i></a
+          >
+        </li>
+
+        <li class="nav-item my-2 pb-1">
+          <a
+          class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+          >Gallery</a
+          >
+        </li>
+
+        <li class="nav-item my-2 pb-1">
+          <a
+          class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+          >Lectures</a
+          >
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #innercontentAboutUs let-offcanvas>
+  <div class="offcanvas-body">
+    <button
+      style="border:none;border-radius: 5px;"
+      class="positionTopRight text-black closeBtnForOffacnvas jost-font bg-white font-size-13 font-weight-600"
+      (click)="offcanvas.dismiss('Cross click')"
+    >GO BACK</button>
+    <div class="spacingUl">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item my-2 pb-1">
+        <a  class="jost-font font-weight-600 font-size-18 text-decoration-none text-white" (click)="offcanvas.dismiss('Cross click')"
+          >Hi</a
+        >
+      </li>
+
+      <li class="nav-item my-2 pb-1">
+        <a  class="jost-font font-weight-600 font-size-18 text-decoration-none text-white" (click)="offcanvas.dismiss('Cross click')"
+          >About us</a
+        >
+      </li>
+    </ul>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #innercontentActivities let-offcanvas>
+  <div class="offcanvas-body">
+    <button
+      style="border:none;border-radius: 5px;"
+      class="positionTopRight text-black closeBtnForOffacnvas jost-font bg-white font-size-13 font-weight-600"
+      (click)="offcanvas.dismiss('Cross click')"
+    >GO BACK</button>
+    <div class="spacingUl">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item my-2 pb-1">
+        <a  class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+        >Inner content</a
+        >
+      </li>
+
+      <li class="nav-item my-2 pb-1">
+
+        <a
+          (click)="open4(innerContentSubMenu)"
+          class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+        >Outer for inner<i class="fa-solid fa-angle-right font-size-13 mx-1"></i></a
+        >
+      </li>
+    </ul>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #innerContentSubMenu let-offcanvas>
+  <div class="offcanvas-body">
+    <button
+      style="border:none;border-radius: 5px;"
+      class="positionTopRight text-black closeBtnForOffacnvas jost-font bg-white font-size-13 font-weight-600"
+      (click)="offcanvas.dismiss('Cross click')"
+    >GO BACK</button>
+    <div class="spacingUl">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item my-2 pb-1">
+        <a  class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+        >Final Inner</a
+        >
+      </li>
+
+      <li class="nav-item my-2 pb-1">
+        <a
+        class="jost-font font-weight-600 font-size-18 text-decoration-none text-white"
+        >Final Inner</a
+        >
+      </li>
+    </ul>
+    </div>
+  </div>
+</ng-template>
