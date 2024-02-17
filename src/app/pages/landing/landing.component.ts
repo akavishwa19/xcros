@@ -50,8 +50,8 @@ export class LandingComponent implements OnInit{
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl:'next-element',
-      prevEl:'prev-element'
+      nextEl:'.next-element',
+      prevEl:'.prev-element'
     },
     pagination: { clickable: true, dynamicBullets: true,type:'progressbar' },
     mousewheel: true,

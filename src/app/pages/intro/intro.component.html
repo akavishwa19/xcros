@@ -1,7 +1,7 @@
 <section  (click)="routeToLanding()" class="bg-variable-dark-black fullHeightWidth">
   <div class="videoContainer">
-    <video #videoTag autoplay muted >
-      <source src="assets/introVideoWhitelabel.mp4" >
+    <video #videoTag controls autoplay [muted]="'muted'">
+      <source src="assets/introVideo.mp4" />
     </video>
   </div>
 </section>
